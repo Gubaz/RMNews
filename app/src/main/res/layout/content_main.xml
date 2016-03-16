@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/titletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/titlebutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Info"
+        android:layout_below="@+id/titletxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/desctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebutton"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/desctxt" />
+
+    <Button
+        android:id="@+id/logobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Im"
+        android:layout_below="@+id/desctxt"
+        android:layout_toRightOf="@+id/titletxt"
+        android:layout_toEndOf="@+id/titletxt" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/logobutton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
